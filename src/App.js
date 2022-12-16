@@ -1,6 +1,13 @@
 import "./App.css";
 import React from "react";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import {
+  HashRouter,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+  Outlet,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectOne from "./pages/ProjectOne";
 import ProjectTwo from "./pages/ProjectTwo";
@@ -26,15 +33,14 @@ function App() {
             <NavLink to="/projectfour">Project 4</NavLink>
           </li> */}
         </div>
+        <Outlet />
       </nav>
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="projectone" element={<ProjectOne />} />
-          <Route path="projecttwo" element={<ProjectTwo />} />
-          <Route path="projectthree" element={<ProjectThree />} />
-          <Route path="projectfour" element={<ProjectFour />} />
-        </Route>
+      <Routes path="/">
+        <Route index element={<Home />} />
+        <Route path="projectone" element={<ProjectOne />} />
+        <Route path="projecttwo" element={<ProjectTwo />} />
+        <Route path="projectthree" element={<ProjectThree />} />
+        <Route path="projectfour" element={<ProjectFour />} />
       </Routes>
     </>
   );
