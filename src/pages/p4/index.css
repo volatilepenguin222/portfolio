@@ -1,0 +1,189 @@
+.four html {
+  font-family: "Jost", sans-serif;
+  background-color: ivory;
+}
+
+.four .layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.four .intro {
+  color: rgb(8, 0, 114);
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.four .introa,
+.four .introa:link {
+  color: rgb(8, 0, 114);
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.four .introa .picture {
+  border-radius: 30px;
+}
+
+.four .introa:hover {
+  color: rgb(51, 39, 218);
+  cursor: pointer;
+}
+
+.four .introa:hover img {
+  box-shadow: 0px 5px 10px rgb(51, 39, 218);
+}
+
+.four #introadiv {
+  text-align: center;
+  height: 100%;
+  flex: 2;
+  position: sticky;
+  top: 10vw;
+  padding-left: 2vw;
+  padding-right: 10vw;
+}
+
+.four img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* .four .intro:hover {
+  color: darkseagreen;
+} */
+
+.four h1 {
+  font-size: 4em;
+  margin-bottom: 0%;
+  font-weight: 500;
+}
+
+.four h4 {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.four h2 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.four h3 {
+  font-weight: 400;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: rgb(8, 0, 114);
+  margin-top: 0;
+}
+
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.four .answergrid {
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.four .answergrid > div {
+  background-color: rgb(236, 236, 247);
+  border-radius: 8px;
+  padding: 30px;
+  width: 200px;
+  height: 250px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+}
+
+.four .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.four .grid > div {
+  background-color: rgb(240, 240, 221);
+  border-radius: 8px;
+  padding: 30px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+  color: black;
+  cursor: default;
+}
+
+/* .grid > img {
+  align-content: center;
+} */
+
+.four .grid > div:hover {
+  box-shadow: 0px 5px 10px rgb(51, 39, 218);
+}
+
+.four p {
+  text-indent: 3%;
+}
+
+/* .grid > div:active {
+  box-shadow: 0px 5px 10px ivory;
+  background-color: #6ca798;
+} */
+
+/* ul.components li:first-of-type {
+  list-style: none;
+  margin-left: -1em;
+  text-decoration: underline;
+} */
+
+.four ul {
+  list-style-type: circle;
+}
+
+.four .nest {
+  list-style-type: none;
+  color: rgb(96, 95, 84);
+}
+
+/* section:nth-child(even) {
+  background-color: lavenderblush;
+} */
+/* section:nth-child(odd) {
+  background-color: plum;
+} */
+
+.four section {
+  padding-left: 10vw;
+  padding-bottom: 5vw;
+  padding-right: 2vw;
+}
+
+.four .test {
+  display: flex;
+  height: auto;
+}
+
+.four .process {
+  flex: 2;
+}

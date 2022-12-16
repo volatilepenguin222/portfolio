@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- check if works on phone... -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Responsive Redesign</title>
+  </head>
+
+  <body>
+    <section class="layout">
+      <div>
+        <h1>Responsive Redesign</h1>
+        <!-- <h4>Webpage: Aleppo Sweets Takout Menu</h4> -->
+        <a class="introa" href="https://store.alepposweets.com/cafe-menu">
+          Webpage: Aleppo Sweets Takeout Menu</a
+        >
+        <div class="intro">
+          At first glance, Aleppo Sweets has a fairly aesthetic website;
+          however, as an interface for placing takeout orders, I found myself
+          looking for missing affordances that would make the ordering process a
+          bit cleaner.
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid">
+        <div>
+          <img height="600rem" src="images/screenshot.jpg" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Usability & Accessibility</h3>
+      <div class="grid">
+        <div>
+          <h2>Problems</h2>
+          <ul>
+            <li>
+              lack of navigation - no way for a user to refine their search
+              (they have to scroll through the entire menu)
+            </li>
+            <li>
+              to access/view cart contents, a user must scroll up to the
+              beginning of the website (menu does not propogate down as
+              scrolling occurs)
+            </li>
+            <li>
+              manual scroll required - no way to jump back to the top of the
+              page
+            </li>
+            <li>repetitive/uneccessary buttons for items</li>
+            <li>inconsistent spacing between items</li>
+            <li>item images become too large in narrower dimensions</li>
+          </ul>
+          <div>
+            *note: these problems are especially aggravated by the volume of the
+            menu.
+          </div>
+          <h2>Accessibility</h2>
+          <ul>
+            <li>Contrast errors</li>
+            <ul class="nest">
+              <li>
+                I actually feel like this webpage does fairly well with text
+                visibility. They choose dark colors against white text, and when
+                they overlay an image with white text, they darken the image
+                accordingly such that there is enough contrast. It may still be
+                something to consider for color-blind users, but I understand
+                the business's desire to portray the liveliness of their
+                products through strategically-placed images.
+              </li>
+            </ul>
+            <li>Lack of structural elements</li>
+            <ul class="nest">
+              <li>
+                There are no header structures nor page regions on this ordering
+                page (which is weirdly inconsistent with other pages of this
+                website). Users of assistive technology often rely on these
+                structures for proper navigation and functionality.
+              </li>
+            </ul>
+            <li>Defined language attribute</li>
+            <ul class="nest">
+              <li>
+                This website is geared towards English speakers and is correctly
+                lang-attributed as so. It's interesting to note that the headers
+                are also listed in Arabic and not attributed as so, but since
+                the Arabic translation is directly under the English header,
+                it's more intuitive and shouldn't pose an issue for the screen
+                readers.
+              </li>
+            </ul>
+          </ul>
+          <p>
+            short summary about the accessibility tests & findings.. do you
+            agree with the problems detected? <br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Low-fidelity Wireframing</h3>
+      <div class="grid">
+        <div>
+          <!-- carousel -->
+          <div class="slideshow-container">
+            <div class="mySlides1 fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/annotated/lofidesktop.png" style="width: 100%" />
+            </div>
+            <div class="mySlides1 fade">
+              <div class="numbertext">2 / 5</div>
+              <img
+                src="images/annotated/lofidesktopdropdown.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides1 fade">
+              <div class="numbertext">3 / 5</div>
+              <img
+                src="images/annotated/lofidesktopscroll.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides1 fade">
+              <div class="numbertext">4 / 5</div>
+              <img
+                src="images/annotated/lofitabletclear.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides1 fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="images/annotated/lofiphone.png" style="width: 100%" />
+            </div>
+            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot1" onclick="currentSlide1(1)"></span>
+            <span class="dot1" onclick="currentSlide1(2)"></span>
+            <span class="dot1" onclick="currentSlide1(3)"></span>
+            <span class="dot1" onclick="currentSlide1(4)"></span>
+            <span class="dot1" onclick="currentSlide1(5)"></span>
+          </div>
+          <!-- carousel end -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Visual Design Style Guide</h3>
+      <div class="grid">
+        <div>
+          <img src="images/styleguide.png" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>High-Fidelity Prototyping</h3>
+      <div class="grid">
+        <div>
+          <!-- carousel -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img
+                src="images/annotated/hifidesktopmainannotated.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img
+                src="images/annotated/hifidesktopscrollannoted.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img
+                src="images/annotated/hifitabletannotated.png"
+                style="width: 100%"
+              />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img
+                src="images/annotated/hifiphoneannoted.png"
+                style="width: 100%"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide1(1)"></span>
+            <span class="dot" onclick="currentSlide1(2)"></span>
+            <span class="dot" onclick="currentSlide1(3)"></span>
+            <span class="dot" onclick="currentSlide1(4)"></span>
+          </div>
+          <!-- carousel end -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Responsive Redesign</h3>
+      <div class="grid">
+        <div>
+          <h2>
+            - has reasonable layouts on desktop, tablet, & phone formats <br />
+            - designed visually as expected on various screen sizes between the
+            3 standard formats <br />
+            - and various font sizes
+          </h2>
+          <div id="introadiv">
+            <a
+              class="introa"
+              href="https://volatilepenguin222.github.io/cs1300-responsive-redesign/"
+              target="_blank"
+            >
+              Redesigned Takeout Menu</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    // carousel lofi
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
+    function plusSlides1(n) {
+      showSlides1((slideIndex1 += n));
+    }
+    function currentSlide1(n) {
+      showSlides1((slideIndex1 = n));
+    }
+    function showSlides1(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides1");
+      var dots = document.getElementsByClassName("dot1");
+      if (n > slides.length) {
+        slideIndex1 = 1;
+      }
+      if (n < 1) {
+        slideIndex1 = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1 - 1].style.display = "block";
+      dots[slideIndex1 - 1].className += " active";
+    }
+    // carousel lofi end
+
+    // carousel hifi
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+    // carousel hifi end
+
+    $("h1").on("click", (c) => {
+      console.log("HELLO SIR");
+    });
+  </script>
+</html>

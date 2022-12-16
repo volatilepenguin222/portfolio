@@ -1,0 +1,189 @@
+.three html {
+  font-family: "Jost", sans-serif;
+  background-color: ivory;
+}
+
+.three .layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 2em; */
+}
+
+.three .intro {
+  color: rgb(111, 150, 111);
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.three .introa,
+.three .introa:link {
+  color: rgb(111, 150, 111);
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.three .introa .picture {
+  border-radius: 30px;
+}
+
+.three .introa:hover {
+  color: darkseagreen;
+  cursor: pointer;
+}
+
+.three .introa:hover img {
+  box-shadow: 0px 5px 10px darkseagreen;
+}
+
+.three #introadiv {
+  text-align: center;
+  height: 100%;
+  flex: 2;
+  position: sticky;
+  top: 10vw;
+  padding-left: 2vw;
+  padding-right: 10vw;
+}
+
+.three img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* .three .intro:hover {
+  color: darkseagreen;
+} */
+
+.three h1 {
+  font-size: 4em;
+  margin-bottom: 0%;
+  font-weight: 500;
+}
+
+.three h4 {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.three h2 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.three h3 {
+  font-weight: 400;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: rgb(111, 150, 111);
+  margin-top: 0;
+}
+
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.three .answergrid {
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.three .answergrid > div {
+  background-color: rgb(236, 236, 247);
+  border-radius: 8px;
+  padding: 30px;
+  width: 200px;
+  height: 250px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+}
+
+.three .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.three .grid > div {
+  background-color: rgb(240, 240, 221);
+  border-radius: 8px;
+  padding: 30px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+  color: black;
+  cursor: default;
+}
+
+/* .grid > img {
+  align-content: center;
+} */
+
+.three .grid > div:hover {
+  box-shadow: 0px 5px 10px darkseagreen;
+}
+
+.three p {
+  text-indent: 3%;
+}
+
+/* .grid > div:active {
+  box-shadow: 0px 5px 10px ivory;
+  background-color: #6ca798;
+} */
+
+/* ul.components li:first-of-type {
+  list-style: none;
+  margin-left: -1em;
+  text-decoration: underline;
+} */
+
+.three ul {
+  list-style-type: circle;
+}
+
+.three .nest {
+  list-style-type: none;
+  color: rgb(96, 95, 84);
+}
+
+/* section:nth-child(even) {
+  background-color: lavenderblush;
+} */
+/* section:nth-child(odd) {
+  background-color: plum;
+} */
+
+.three section {
+  padding-left: 10vw;
+  padding-right: 2vw;
+  padding-bottom: 5vw;
+}
+
+.three .test {
+  display: flex;
+  /* padding-bottom: 200px; */
+}
+
+.three .process {
+  flex: 2;
+}
