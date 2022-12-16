@@ -85,7 +85,7 @@ function ProjectTwo() {
             href="https://volatilepenguin222.github.io/cs1300-responsive-assignment-2/"
             target="_blank"
           >
-            <img className="picture" src="images/redesign.png" />
+            <img className="picture" src="images/siteredesign.png" />
             Click to view the Design Process
           </a>
         </div>
