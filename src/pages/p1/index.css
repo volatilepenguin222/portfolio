@@ -123,6 +123,7 @@
   grid-gap: 40px;
   justify-items: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .one .grid > div {
