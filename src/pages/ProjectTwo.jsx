@@ -30,7 +30,6 @@ function ProjectTwo() {
             <div className="grid">
               <div>
                 <h3>context</h3>
-                <h2>what problem does this solve?</h2>
                 <div>
                   At first glance, Aleppo Sweets has a fairly aesthetic and
                   minimally-responsive website; however, as an interface for
@@ -45,7 +44,6 @@ function ProjectTwo() {
             <div className="grid">
               <div>
                 <h3>research & feedback</h3>
-                <h2>??</h2>
                 <div>
                   As mentioned prior, the current aleppo sweets platform is
                   actually pretty responsive and from an informational
